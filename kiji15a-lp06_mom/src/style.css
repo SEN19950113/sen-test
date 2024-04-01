@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&family=Noto+Serif+TC:wght@700;900&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+body {
+  background-color: #c9c5c5;
+  font-family: arial, "Microsoft JhengHei", "微軟正黑體", sans-serif !important;
+  font-size: 1.4em;
+  line-height: 1.8;
+}
+img,
+video {
+  width: 80%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+#cp {
+  max-width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0px 0 30px 0 #333;
+  -webkit-box-shadow: 0px 0 15px 0 #a19d9d;
+}
+
+#header {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+  font-family: "微軟正黑體";
+  border-bottom: 1px solid #000;
+  padding: 3em 1em 1em 1em;
+}
+
+#inner {
+  max-width: 850px;
+  padding: 1.5em 3em 3em 3em;
+  margin: 0 auto;
+  /*border: red solid thin;*/
+}
+
+/**大標題**/
+#label {
+  width: 200px;
+  height: 60px;
+  background-color: #cc0000;
+  -webkit-clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
+  margin-top: 30px 0 0 0;
+  position: absolute;
+  margin: 30px 0 0 0;
+}
+#label p {
+  color: white;
+  font-size: 1.4em;
+  margin: 0.2em 1em;
+}
+/**大標題**/
+
+/**字體顏色大小變動**/
+.rdtxt {
+  color: rgb(240, 15, 15);
+  font-weight: 600;
+}
+
+.bltxt {
+  color: rgb(0, 122, 221);
+  font-weight: 600;
+}
+
+.grntxt {
+  color: rgb(82, 170, 70);
+  font-weight: 600;
+}
+
+.orgtxt {
+  color: rgb(218, 140, 39);
+  font-weight: 600;
+}
+
+.purtxt {
+  color: rgb(152, 39, 218);
+  font-weight: 600;
+}
+
+.big {
+  font-size: 1.3em;
+}
+/**字體顏色大小變動**/
+
+.promo {
+  text-align: center;
+  color: red;
+  font-weight: 600;
+}
+
+.btn {
+  text-align: center;
+}
+
+.btn > a > img {
+  width: 100%;
+}
+
+.space {
+  display: none;
+}
+
+.space2 {
+  display: none;
+}
+
+.headerimg {
+  display: none;
+}
+
+.headerimg > img {
+  width: 100%;
+}
+
+/* RWD */
+@media screen and (max-width: 800px) {
+  .space {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .headerimg {
+    display: block;
+  }
+  .headertxt {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #header {
+    font-size: 1.6em;
+  }
+  #inner {
+    padding: 1em 1.5em 3em 1.5em;
+  }
+
+  #label p {
+    font-size: 1.3em;
+    margin: 0.2em 1em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #header {
+    font-size: 1.3em;
+    padding-top: 4em;
+  }
+
+  .space2 {
+    display: inline-block;
+  }
+
+  .big {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    font-size: 1.2em;
+  }
+
+  #header {
+    padding-top: 4.5em;
+  }
+
+  #inner {
+    padding: 1em 1.3em 2em 1.3em;
+    /* font-size: 0.9em; */
+  }
+  #label p {
+    margin: 0.4em 1.7em;
+  }
+}
+
+/* cta開始 */
+.fixed-obj {
+  position: fixed;
+  bottom: 30px;
+  right: 0;
+  max-width: 180px;
+  width: 100%;
+  z-index: 999;
+  -webkit-transition: top 0.5s ease-out;
+  -webkit-transition: bottom 0.5s ease-out;
+  transition: bottom 0.5s ease-out;
+
+}
+
+.fixed-obj.show_sta {
+  bottom: 30px;
+}
+
+/* 此行代表手機版的圖片隱藏 */
+.fixed-obj img:nth-child(2) {
+  display: none !important;
+}
+
+@media screen and (max-width: 745px) {
+  .fixed-obj {
+    bottom: 0px;
+    width: 100%;
+    max-width: 100%;
+    -webkit-transition: bottom 0.5s ease-out;
+    transition: bottom 0.5s ease-out;
+  }
+  /* 此行代表手機版的圖片顯示 */
+  .fixed-obj img:nth-child(2) {
+    display: block !important;
+    width: 100%;
+    margin: 0 auto;
+  }
+  /* 此行代表電腦版的圖片隱藏 */
+  .fixed-obj img:nth-child(1) {
+    display: none !important;
+  }
+  .fixed-obj.show_sta {
+    top: auto;
+    bottom: 0;
+  }
+  .btn {
+    margin-bottom: 40%;
+  }
+}
+
+/* cta 結束 */
