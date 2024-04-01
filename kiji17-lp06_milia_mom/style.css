@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK&family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+HK:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    vertical-align: bottom;
+}
+html,body{
+    height: 100%;
+}
+img{
+    width: 100%;
+    height: auto;
+    margin: 20px 0px;
+}
+.clear{
+    clear: both;
+}
+body{
+    font-family: 'Noto Sans HK', sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+
+    word-wrap: break-word;
+}
+#top{
+    padding: 1em 0;
+}
+#top img {
+    margin: 0 0 !important;
+}
+#PC_top {
+    display: block;
+    width: 100%;
+
+    margin-bottom: 0px;
+  }
+
+  #PC_top img {
+    width: 100%;
+  }
+
+  #SP_top {
+    display: none;
+  }
+
+  @media screen and (max-width: 500px) {
+    #PC_top {
+      display: none;
+    }
+
+    #SP_top {
+      display: block;
+
+    }
+  }
+
+.sm-txt{
+    font-size: 0.8em;
+    opacity: 0.4;
+}
+
+
+
+
+
+/*內文區塊*/
+
+.CP{
+    max-width: 1100px;
+    margin: 0 auto ;
+
+    border-left: rgb(224, 224, 224) solid thin;
+    border-right: rgb(224, 224, 224) solid thin;
+    line-height: 2em;
+    box-shadow: 0px 0 30px 0 #333;
+    -webkit-box-shadow: 0px 0 15px 0 #363636;
+}
+.inner{
+    padding: 0 100px;
+}
+@media screen and (max-width:1000px) {
+    .inner{
+        padding: 0 1em;
+    }
+}
+#title{
+    margin: 0em 0em !important;
+    text-align: start;
+}
+#title hr{
+    margin-top: 1.3em;
+}
+.part p{
+    margin-bottom: 0.5em;
+}
+
+/*內文文字設定*/
+#title_s{
+    background-color: black;
+    color: white;
+    display: inline-block;
+    padding: 0em 1.3em;
+    margin-bottom: .6em;
+    font-weight: 400;
+    line-height: 2em;
+}
+#title_l{
+    font-size: 1.7em;
+    line-height: 1.4em;
+    font-weight: 900;
+    font-family: 'Noto Serif HK', serif;
+    text-align: center;
+
+}
+#title_date{
+    color: rgb(235, 143, 37);
+    font-weight: 400;
+    font-size: .9em;
+}
+.CP a, .headline{
+    font-weight: 600;
+}
+
+.CP a:hover{
+    opacity: 0.8;
+}
+.txt_big{
+    font-size: 1.2em;
+}
+.txt_bold{
+    font-weight: 600;
+}
+.txt-orange{
+    color: rgb(255, 158, 47);
+    font-weight: 600;
+}
+.txt_pink{
+    color: rgb(255, 91, 132);
+    font-weight: 600;
+}
+.txt_red{
+    color: rgb(252, 64, 31);
+    font-weight: 600;
+}
+.txt-green{
+    color:rgb(17, 173, 17);
+    font-weight: 600;
+}
+.txt-blue{
+    color:#5DA7DB;
+    font-weight: 600;
+}
+.txt-purple{
+    color:#7F669D;
+    font-weight: 900;
+
+}
+.txt_yellow{
+    color: rgb(253, 191, 18);
+    font-weight: 900;
+}
+.btn-more{
+    text-align: center;
+}
+.btn-more img{
+    width: 50%;
+}
+.norlink{
+    color: black;
+}
+.headline{
+    font-size: 1.35em;
+}
+/**/
+/**/
+
+/* 兩張照片 */
+.twoImg{
+    display: flex;
+    margin-bottom: 20px;
+}
+.twoImg>img{
+    width: 47.5%;
+    margin: 0 10px;
+}
+
+
+/*自介文字設定*/
+#about{
+    text-align: center;
+    margin-bottom: 4em;
+}
+#about_title{
+    font-family: 'Noto Sans HK', sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 1em;
+}
+#profile{
+    width: 30%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+/**/
+
+
+
+/*RWD*/
+
+
+@media screen and (max-width: 850px){
+
+
+    #title{
+        margin: 2em 0;
+    }
+    .part p{
+        margin-bottom: 0.3em;
+    }
+    #title_l{
+        font-size: 2em;
+    }
+    .headline{
+        font-size: 1.3em;
+    }
+
+    #about{
+        margin-bottom: 3em;
+    }
+    #about_title{
+        font-size: 1.3em;
+        font-weight: 500;
+        margin-bottom: 1.2em;
+    }
+    #profile{
+        width: 50%;
+        margin-bottom: 1.3em;
+    }
+}
+@media screen and (max-width: 700px){
+    body{
+        font-size: 1.3em;
+    }
+    .CP{
+        padding: 0 50px;
+        line-height: 1.8em;
+    }
+
+    #title_l{
+        font-size: 1.8em;
+    }
+    .txt_big{
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 600px){
+    .CP{
+        padding: 0 16px;
+        line-height: 1.7em;
+    }
+    #title{
+        margin: 1.5em 0;
+    }
+    #title_s{
+        background-color: black;
+        color: white;
+        display: inline-block;
+        padding: 0em 1.3em;
+        margin-bottom: .6em;
+        font-weight: 400;
+        line-height: 1.8em;
+        font-size: .9em;
+    }
+    #title_date{
+        font-size: .8em;
+    }
+    #title hr{
+        margin-top: 1m;
+    }
+    .headline{
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 450px){
+    body{
+        font-weight: 400;
+        font-size: 1.2em;
+    }
+    .CP{
+        padding: 0 16px;
+        line-height: 1.7em;
+    }
+
+    #title_l{
+        font-size: 1.6em;
+    }
+
+    #about{
+        margin-bottom: 4em;
+    }
+    #profile{
+        width: 70%;
+        margin-bottom: 1.3em;
+    }
+
+
+}
+
+@media screen and (max-width:700px) {
+    .br-ph{
+        display: none;
+    }
+}
+
+video{
+    max-width: 100%;
+    height: auto;
+}
+
+.btn{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+
+}
+.btn img{
+    width: 50% !important;
+}
+
+
+.btn-more {
+    display: inline-block;
+    background: #009100;
+    /*  background: linear-gradient(
+      -90deg,
+      rgba(148, 255, 159, 1) 0%,
+      rgba(138, 236, 71, 1) 29%,
+      rgba(229, 255, 166, 1) 58%,
+      rgba(239, 255, 109, 1) 90%
+    ); */
+    color: rgb(255, 255, 255);
+
+    padding: 1.5% 3% 1.5% 4%;
+    text-decoration: none;
+    /* border-radius: 8px; */
+    font-size: 1.3em;
+    font-weight: 900;
+    transition: 0.8s;
+    margin: 0 auto;
+    animation: scale 0.6s alternate infinite;
+  }
+
+  .btn-more:hover {
+    opacity: 0.5;
+    background: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+  }
+  @media(max-width: 745px) {
+    .btn-more {
+        margin-bottom: 40%;
+    }
+  }
+
+
+  @keyframes scale {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+
+  /* cta開始 */
+  .fixed-obj {
+    position: fixed;
+    bottom: 30px;
+    right: 0;
+    max-width: 180px;
+    width: 100%;
+    z-index: 999;
+    -webkit-transition: top 0.5s ease-out;
+    -webkit-transition: bottom 0.5s ease-out;
+    transition: bottom 0.5s ease-out;
+  
+  }
+  
+  .fixed-obj.show_sta {
+    bottom: 30px;
+  }
+  
+  /* 此行代表手機版的圖片隱藏 */
+  .fixed-obj img:nth-child(2) {
+    display: none !important;
+  }
+  
+  @media screen and (max-width: 745px) {
+    .fixed-obj {
+      bottom: 0px;
+      width: 100%;
+      max-width: 100%;
+      -webkit-transition: bottom 0.5s ease-out;
+      transition: bottom 0.5s ease-out;
+    }
+    /* 此行代表手機版的圖片顯示 */
+    .fixed-obj img:nth-child(2) {
+      display: block !important;
+      width: 100%;
+      margin: 0 auto;
+    }
+    /* 此行代表電腦版的圖片隱藏 */
+    .fixed-obj img:nth-child(1) {
+      display: none !important;
+    }
+    .fixed-obj.show_sta {
+      top: auto;
+      bottom: 0;
+    }
+  }
+  
+  /* cta 結束 */
